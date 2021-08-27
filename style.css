@@ -72,7 +72,7 @@ header.head1 .logo h1 a{
     color: var(--mngr) !important;
 }
 .mainmenu {
-    z-index: 0;
+    z-index: 123;
 }
 .mainmenu a{
     color: var(--gra);
@@ -129,18 +129,23 @@ header.head1 .logo h1 a{
     
     .head1{
         padding: 0 20px;
+        
+    }
+    .mainsddsdgfgfdgdfg{
         position: relative;
+        overflow: hidden;
     }
     .mainmenu{
         position: absolute;
-        width: 90vw;
-        height: 75vh;
-        z-index: 100;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%) translateY(25%);
-        background-color: rgb(2, 2, 2);
-        display: none;
+        width: 100vw;
+        height: 55vh;
+        z-index: 2333;
+        top: 100px;
+        left: -150%;
+        padding: 10px 0;
+        transition: .4s;
+        background-color: rgb(0, 0, 0);
+        
     }
     .mainmenu ul{
         list-style: none;
@@ -149,11 +154,18 @@ header.head1 .logo h1 a{
         display: block;
         
     }
+    .drops i{
+        background-color: transparent !important;
+    }
     .mainmenu>ul li a{
         display: block;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(22, 22, 22);
         text-align: center;
         
+    }
+    .menubars{
+        left: 0%;
+        transition: .4s;
     }
     
 }

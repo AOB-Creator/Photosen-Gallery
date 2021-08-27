@@ -6,7 +6,7 @@
             document.querySelector(".hidden-icon i").classList.remove("anime")
             document.querySelector(".hidden-icon i").classList.toggle("ti-view-list")
             document.querySelector(".hidden-icon i").classList.toggle("ti-close")
-            
+            document.querySelector(".mainmenu").classList.toggle("menubars")
         }, 250)
     })
 

@@ -1,0 +1,116 @@
+:root{
+    --mngr: #158765;
+    --gra:#777;
+    --fnt1:"Josefin Sans";
+    --bg: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: var(--fnt1);
+}
+
+
+.mainservice h1{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    padding: 20px 0px;
+}
+.mainservice{
+    z-index: 23;
+    padding: 20px 0px;
+}
+.servicescard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.servicescard .cards{
+    width: 32%;
+    height: auto;
+    padding: 20px 10px;
+    background-color:#262626;
+    margin:10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicescard .cards:hover{
+    transition: .4s;
+}
+.servicescard .cards:hover i{
+    color: #2bdfa9;
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+.servicescard .cards:hover h1{
+    color: #2bdfa9;
+}
+.servicescard .cards:hover span{
+    color: #2bdfa9;
+}
+
+.servicescard .cards  i{
+    display: inline-block;
+    font-size: 50px;
+    background-color: transparent;
+    color: var(--mngr);
+    padding: 25px;
+}
+
+.servicescard .cards h1{
+    font-size: 20px;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+.servicescard .cards p {
+    font-size: 17px;
+    background-color: transparent;
+    color: gray;
+    width: 80%;
+    margin: auto;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.servicescard .cards span {
+    display: block;
+    font-size: 16px;
+    background-color: transparent;
+    color:var(--mngr);
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+@media(max-width: 400px){
+    .servicescard .cards{
+        width: 98% !important;
+        padding: 20px 10px;
+        margin:10px auto !important;
+    }
+    
+    .mainservice h1{
+        font-size: 25px !important;
+    }
+}
+
+@media(min-width: 401px ) and (max-width: 630px) {
+    .servicescard .cards{
+        width: 49% !important;
+        padding: 20px 10px;
+        margin:10px auto !important;
+    }
+    
+    .mainservice h1{
+        font-size: 25px !important;
+    }
+}

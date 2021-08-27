@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    --mngr: #1fb488;
+    --gra:#777;
+    --fnt1:"Josefin Sans";
+    --bg: #000000;
+}
+.none{
+    display: none;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    z-index: -2323;
+}
+
+
+.spinner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+#wifi-loader{
+    width: 70px !important;
+    height: 70px !important;
+    background-color: white !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: var(--fnt1);
+}
+.container{
+    padding: 0px 1%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+
+header.head1{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header.head1 .logo h1 a{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+.current{
+    color: var(--mngr) !important;
+}
+.mainmenu {
+    z-index: 0;
+}
+.mainmenu a{
+    color: var(--gra);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin: 7px;
+    padding: 20px 3px ;
+    font-weight: 600;
+}
+.mainmenu a:hover{
+    color: #1bad81;
+    transition: .3s;
+}
+.mainicons i{
+    color: var(--gra);
+    margin: 10px;
+}
+.mainicons i:hover{
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+
+/* 1-section ends */
+/* 1-section ends */
+/* 1-section ends */
+/* 1-section ends */
+/* 1-section ends */
+
+
+
+
+.mainbody{
+    padding: 30px 1%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 10p;
+}
+.imgside{
+    z-index: 10 !important;
+    width: 32%;
+    height: fit-content;
+    margin: 10px 0px;
+    position: relative;
+    overflow: hidden;
+    
+    cursor: pointer;
+}
+@media(max-width: 810px){
+    
+    .head1{
+        padding: 0 20px;
+        position: relative;
+    }
+    .mainmenu{
+        position: absolute;
+        width: 90vw;
+        height: 75vh;
+        z-index: 100;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%) translateY(25%);
+        background-color: rgb(2, 2, 2);
+        display: none;
+    }
+    .mainmenu ul{
+        list-style: none;
+    }
+    .mainmenu>ul li{
+        display: block;
+        
+    }
+    .mainmenu>ul li a{
+        display: block;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        
+    }
+    
+}
+@media(max-width: 600px){
+    
+    .imgside{
+        width: 98% !important;
+        margin: 10px auto;
+        user-select: none !important;
+        
+    }
+    .mainicons {
+        display: none;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 810px){
+    
+    .imgside{
+        width: 49% !important;
+        margin: 10px auto;
+        user-select: none !important;
+        
+    }
+    .mainicons {
+        display: block;
+    }
+}
+
+.imgside img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+}
+.imgside:hover img{ 
+    cursor: pointer !important;
+    transition: 0.8s;
+    filter: grayscale(0);
+}
+.imgside span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.imgside span h1{
+    background-color: transparent;
+    color: white ;
+    text-transform: capitalize;
+}
+.imgside span:hover ~ img {
+    filter: grayscale(0);
+}
+.drops{
+    position: relative;
+}
+
+.drops:hover>.dropdw{
+    display: block;
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events: all;
+    
+}  
+
+.dropdw{
+    z-index: 3340;
+    visibility: hidden;
+    top: 29px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    pointer-events: none;
+    opacity: 0;
+    border-top: 2px solid #47f38f;
+}
+div[data-text="Alpamis Omirbekov"]{
+    background-color: white !important;
+    text-transform: capitalize !important;
+    width: 130px;
+}
+.dropdw li{
+    display: block !important; 
+    background-color: transparent;
+}
+.dropdw a{
+    background-color: white;
+    display: block;
+    text-transform: capitalize;
+    font-variant: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px 10px;
+    color: var(--bg);
+}
+.dropdw a:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.imgside span a{
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid white;
+    margin:5px 0px;
+    font-size: 13px;
+}
+
+
+.imgside span a:hover{
+    background-color: white;
+    color: var(--bg);
+    transition: 0.4s;
+    
+}
+
+
+
+
+
+
+
+
+
+.drop2 {
+    position: relative;
+}
+.drop2 i{
+    background-color: transparent;
+    margin-left: 80px;
+}
+.drop2:hover >.drops2{
+    opacity: 1;
+    z-index: 3;
+}
+.drops2{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    z-index: -3;
+}
+
+
+
+.hidden-icon i{
+    display: none;
+}
+
+.hidden-icon i.anime{
+    animation: anime .7s forwards;
+}
+@keyframes anime{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+    .footer{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }    
+    .footer p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hidden-icon i{
+        display: block;
+        color: #fff;
+        font-size: 20px;   
+    }
+}
+
+
+
+.footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    color: var(--gra);
+}
+
+.footer a{
+    color: #47f38f;
+}

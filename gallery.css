@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    --mngr: #158765;
+    --gra:#777;
+    --fnt1:"Josefin Sans";
+    --bg: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: var(--fnt1);
+    color: white;
+}
+.container{
+    padding: 0px 1%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+
+header.head1{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header.head1 .logo h1 a{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+
+@media(max-width: 400px){
+
+    .gallery>h1{
+        font-size: 27px !important;
+    }
+    .imgsgalery{
+        width: 98% !important;
+        
+        margin: 5px auto !important;
+        filter: grayscale(1);
+        overflow: hidden !important;
+    }
+
+}
+
+
+@media(max-width: 600px ) and (min-width: 401px){
+
+    .gallery>h1{
+        font-size: 27px !important;
+    }
+    .imgsgalery{
+        width: 49% !important;
+        
+        margin: 5px auto !important;
+        filter: grayscale(1);
+        overflow: hidden !important;
+    }
+
+}
+
+
+@media(max-width: 900px ) and (min-width: 601px){
+
+    .gallery>h1{
+        font-size: 37px !important;
+    }
+    .imgsgalery{
+        width: 32% !important;
+        
+        margin: 5px auto !important;
+        filter: grayscale(1);
+        overflow: hidden !important;
+    }
+
+}
+
+
+
+.current{
+    color: var(--mngr) !important;
+}
+.mainmenu a{
+    color: var(--gra);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin: 7px;
+    padding: 20px 3px ;
+    font-weight: 400;
+}
+.mainmenu a:hover{
+    color: #1bad81;
+    transition: .3s;
+}
+.mainicons i{
+    color: var(--gra);
+    margin: 10px;
+}
+.mainicons i:hover{
+    color: #fff;
+    transition: 0.4s;
+}
+
+.drops{
+    position: relative;
+}
+
+.drops:hover>.dropdw{
+    z-index: 200 !important;
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events: all;
+}  
+
+.dropdw{
+    top: 30px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    z-index: 123;
+    opacity: 0;
+    border-top: 2px solid #47f38f;
+    pointer-events: none;
+}
+
+.dropdw li{
+    display: block !important; 
+    background-color: transparent;
+}
+.dropdw a{
+    background-color: white;
+    display: block;
+    text-transform: capitalize;
+    font-variant: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px 10px;
+    color: var(--bg);
+}
+.dropdw a:hover{
+    background-color: rgb(238, 238, 238);
+
+}
+.drop2 {
+    position: relative;
+}
+.drop2 i{
+    background-color: transparent;
+    margin-left: 80px;
+}
+.drop2:hover >.drops2{
+    opacity: 1;
+    z-index: 3;
+}
+.drops2{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    z-index: -60;
+}
+
+.gallery{
+    z-index: 23 !important;
+}
+
+.gallery h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    margin: 30px;
+}
+
+/* main of gallery */
+/* main of gallery */
+/* main of gallery */
+/* main of gallery */
+/* main of gallery */
+/* main of gallery */
+
+
+
+.gallery_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15vh;
+    
+    
+}
+.imgsgalery{
+    width: 24%;
+    height: fit-content;
+    position: relative;
+    margin: 5px 0px;
+    filter: grayscale(1);
+    overflow: hidden !important;
+}
+.imgsgalery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imgsgalery:hover{
+    filter: grayscale(0);
+    transition: .4s;
+}
+
+.imgsgalery:hover img{
+transform: scale(1.05);
+    object-position: center;
+    transition: .4s;
+}
+.imgsgalery span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+
+}

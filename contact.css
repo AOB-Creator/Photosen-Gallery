@@ -1,0 +1,161 @@
+:root{
+    --mngr: #158765;
+    --gra:#777;
+    --fnt1:"Josefin Sans";
+    --bg: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: var(--fnt1);
+}
+
+.main-contact h1{
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--fnt1);
+
+}
+label{
+    color: white;
+    padding: 5px 0px;
+}
+input{
+    display: block;
+    color: white;
+    width: 100%;
+    border: 1px solid var(--gra);    
+    padding: 10px 20px;
+}
+
+.main-contact-forms{
+    display: flex;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+}
+.form-side>*{
+    margin: 15px 0;
+}
+.form-side{
+    flex: 2;
+    padding: 0px 20px;
+}
+@media(min-width: 1px) and(max-width: 777px){
+    .top-contact{
+        
+        
+    }
+    .s1{
+        display: block !important;
+        width: 100% !important;
+        
+    }
+}
+
+@media(min-width: 778px) and(max-width: 1778px){
+    
+.main-contact-forms{
+    display: flex;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+}
+
+.form-side{
+    flex: 0 !important;
+    padding: 0px 20px;
+    width: 100px !important;
+    background-color: cadetblue !important;
+}
+.top-contact{
+    display: flex;   
+    justify-content: space-between;
+    flex-direction: column  !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-contact .s1{
+    width: 100px !important;
+    flex: 0;    
+}
+}
+
+.top-contact{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+.top-contact .s1{
+    width: 100%;
+    display: block;
+    flex: 1;    
+}
+
+.top-contact .s1:first-child{
+    margin-right: 10px;
+}
+.top-contact .s1:last-child{
+    margin-left: 10px;
+}
+
+
+.btn{
+    
+}
+.btn button{
+    padding: 15px 20px;
+    background-color: #19b989;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn button span{
+    display: block;
+    width: 0;
+    height: 100%;
+}
+.btn button:hover {
+    background-color: #34f3ba;
+    transition: .4s;
+}
+.btn button:active {
+    background-color: #175240;
+    transition: .4s;
+}
+.message{
+    display:flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    max-width: 100%;
+    flex-grow: 0;
+    min-height: 300px;
+}
+.textarea label{
+    padding: 10px 0 !important;
+    background-color: var(--bg);
+}
+.text-side{
+    padding: 20px 20px;
+    flex: 1;
+    font-family: var(--fnt1);
+}
+.text-side h5{
+    color:white;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.text-side>*{
+    margin: 25px 0px;
+}
+.text-side p{
+    color:var(--gra);
+    width: 80%;
+}
+
+.text-side a{
+    color: var(--mngr);
+}

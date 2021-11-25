@@ -81,10 +81,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.2px;
+  background-color: white;
 }
 #wifi-loader .text::before, #wifi-loader .text::after {
   content: attr(data-text);
